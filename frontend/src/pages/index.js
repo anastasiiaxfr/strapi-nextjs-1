@@ -1,0 +1,11 @@
+import Layout from "@/components/Layout";
+
+export default function Home() {
+  return (
+    <Layout>
+     <h1 className="font-bold text-5xl">
+      hello word
+     </h1>
+    </Layout>
+  );
+}
