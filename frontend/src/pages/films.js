@@ -35,15 +35,15 @@ export default function FilmsPage({ films }) {
           Previous
         </button>
         <span>{`${pageIndex} of ${
-          data && data.meta.pagination.pageCount
+          data && data.meta?.pagination.pageCount
         }`}</span>
         <button
           className={`text-black text-white px-6 py-2 text-sm ${
-            pageIndex === (data && data.meta.pagination.pageCount)
+            pageIndex === (data && data.meta?.pagination.pageCount)
               ? "bg-gray-300"
               : "bg-blue-400"
           }`}
-          disabled={pageIndex === (data && data.meta.pagination.pageCount)}
+          disabled={pageIndex === (data && data.meta?.pagination.pageCount)}
           onClick={() => setPageIndex(pageIndex + 1)}
         >
           Next
